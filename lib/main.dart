@@ -18,3 +18,32 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+class DetailsScreen extends StatelessWidget {
+  const DetailsScreen({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBarComponent(),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            DetailHeaderComponent(),
+            SizedBox(height: 10.0),
+            CoffeeImageComponent(),
+            SizedBox(height: 10.0),
+            CoffeeNameComponent(),
+            CoffeeDescriptionComponent(),
+            RatingComponent(),
+            DescriptionComponent(),
+            DescriptionTextComponent(),
+            SizeComponent(),
+            CoffeeSizeComponent(),
+            PriceComponent(),
+          ],
+        ),
+      ),
+    );
+  }
+}
