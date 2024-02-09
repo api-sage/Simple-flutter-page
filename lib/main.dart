@@ -60,3 +60,28 @@ class AppBarComponent extends StatelessWidget implements PreferredSizeWidget {
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }
+
+class DetailHeaderComponent extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        Column(children: [Image.asset("assets/images/arrow_left.jpg")]),
+        Column(
+          children: [
+            Text(
+              "Detail",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20.0,
+                fontFamily: "Sora",
+              ),
+            )
+          ],
+        ),
+        Column(children: [Image.asset("assets/images/heart.jpg")]),
+      ],
+    );
+  }
+}
