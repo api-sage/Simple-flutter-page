@@ -119,3 +119,25 @@ class CoffeeNameComponent extends StatelessWidget {
     );
   }
 }
+
+class CoffeeDescriptionComponent extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(left: 50.0, top: 3.0),
+      child: Row(
+        children: [
+          Text(
+            "with Chocolate",
+            style: TextStyle(
+              fontWeight: FontWeight.normal,
+              fontSize: 10.0,
+              color: Colors.grey,
+              fontFamily: "Sora",
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
