@@ -267,3 +267,15 @@ class DescriptionTextComponent extends StatelessWidget {
     );
   }
 }
+class DividerComponent extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 15,
+      width: 250,
+      child: Divider(
+        color: Colors.grey[300],
+      ),
+    );
+  }
+}
