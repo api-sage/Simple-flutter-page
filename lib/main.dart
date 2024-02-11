@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -18,7 +17,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
 class DetailsScreen extends StatelessWidget {
   const DetailsScreen({Key? key}) : super(key: key);
 
@@ -47,7 +45,6 @@ class DetailsScreen extends StatelessWidget {
     );
   }
 }
-
 class AppBarComponent extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
@@ -60,7 +57,6 @@ class AppBarComponent extends StatelessWidget implements PreferredSizeWidget {
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }
-
 class DetailHeaderComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -85,7 +81,6 @@ class DetailHeaderComponent extends StatelessWidget {
     );
   }
 }
-
 class CoffeeImageComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -98,7 +93,6 @@ class CoffeeImageComponent extends StatelessWidget {
     );
   }
 }
-
 class CoffeeNameComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -119,7 +113,6 @@ class CoffeeNameComponent extends StatelessWidget {
     );
   }
 }
-
 class CoffeeDescriptionComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -141,7 +134,6 @@ class CoffeeDescriptionComponent extends StatelessWidget {
     );
   }
 }
-
 class RatingComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
